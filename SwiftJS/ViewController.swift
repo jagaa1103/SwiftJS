@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import WebKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, WKScriptMessageHandler {
+    
+    @IBOutlet var containerView:UIView! = nil
+    var webView: WKWebView?
+    
+    override func loadView() {
+    	println("hehehe")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +27,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
