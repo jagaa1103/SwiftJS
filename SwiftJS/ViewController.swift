@@ -27,6 +27,7 @@ class ViewController: UIViewController, WKScriptMessageHandler {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage){
+    }
 }
 
