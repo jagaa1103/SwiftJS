@@ -13,6 +13,8 @@
 		1128235A1A4280B800108EA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112823591A4280B800108EA6 /* Images.xcassets */; };
 		1128235D1A4280B800108EA6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1128235B1A4280B800108EA6 /* LaunchScreen.xib */; };
 		112823691A4280B800108EA6 /* SwiftJSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112823681A4280B800108EA6 /* SwiftJSTests.swift */; };
+		112823761A42901400108EA6 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 112823741A42901400108EA6 /* index.html */; };
+		112823771A42901400108EA6 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 112823751A42901400108EA6 /* main.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		112823621A4280B800108EA6 /* SwiftJSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		112823671A4280B800108EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112823681A4280B800108EA6 /* SwiftJSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJSTests.swift; sourceTree = "<group>"; };
+		112823741A42901400108EA6 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		112823751A42901400108EA6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		1128234F1A4280B800108EA6 /* SwiftJS */ = {
 			isa = PBXGroup;
 			children = (
+				112823731A42901400108EA6 /* www */,
 				112823521A4280B800108EA6 /* AppDelegate.swift */,
 				112823541A4280B800108EA6 /* ViewController.swift */,
 				112823561A4280B800108EA6 /* Main.storyboard */,
@@ -110,6 +115,15 @@
 				112823671A4280B800108EA6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		112823731A42901400108EA6 /* www */ = {
+			isa = PBXGroup;
+			children = (
+				112823741A42901400108EA6 /* index.html */,
+				112823751A42901400108EA6 /* main.js */,
+			);
+			path = www;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				112823581A4280B800108EA6 /* Main.storyboard in Resources */,
+				112823761A42901400108EA6 /* index.html in Resources */,
 				1128235D1A4280B800108EA6 /* LaunchScreen.xib in Resources */,
 				1128235A1A4280B800108EA6 /* Images.xcassets in Resources */,
+				112823771A42901400108EA6 /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +421,7 @@
 				1128236E1A4280B800108EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1128236F1A4280B800108EA6 /* Build configuration list for PBXNativeTarget "SwiftJSTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				112823711A4280B800108EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
