@@ -15,6 +15,7 @@
 		112823691A4280B800108EA6 /* SwiftJSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112823681A4280B800108EA6 /* SwiftJSTests.swift */; };
 		112823761A42901400108EA6 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 112823741A42901400108EA6 /* index.html */; };
 		112823771A42901400108EA6 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 112823751A42901400108EA6 /* main.js */; };
+		114A93331A47B20600D3D82A /* SwiftJS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A93321A47B20600D3D82A /* SwiftJS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,9 @@
 		112823621A4280B800108EA6 /* SwiftJSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		112823671A4280B800108EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112823681A4280B800108EA6 /* SwiftJSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJSTests.swift; sourceTree = "<group>"; };
-		112823741A42901400108EA6 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		112823751A42901400108EA6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		112823741A42901400108EA6 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = www/index.html; sourceTree = "<group>"; };
+		112823751A42901400108EA6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = www/main.js; sourceTree = "<group>"; };
+		114A93321A47B20600D3D82A /* SwiftJS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJS.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,9 @@
 		1128234F1A4280B800108EA6 /* SwiftJS */ = {
 			isa = PBXGroup;
 			children = (
-				112823731A42901400108EA6 /* www */,
+				112823741A42901400108EA6 /* index.html */,
+				112823751A42901400108EA6 /* main.js */,
+				114A93321A47B20600D3D82A /* SwiftJS.swift */,
 				112823521A4280B800108EA6 /* AppDelegate.swift */,
 				112823541A4280B800108EA6 /* ViewController.swift */,
 				112823561A4280B800108EA6 /* Main.storyboard */,
@@ -115,15 +119,6 @@
 				112823671A4280B800108EA6 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		112823731A42901400108EA6 /* www */ = {
-			isa = PBXGroup;
-			children = (
-				112823741A42901400108EA6 /* index.html */,
-				112823751A42901400108EA6 /* main.js */,
-			);
-			path = www;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +225,7 @@
 			files = (
 				112823551A4280B800108EA6 /* ViewController.swift in Sources */,
 				112823531A4280B800108EA6 /* AppDelegate.swift in Sources */,
+				114A93331A47B20600D3D82A /* SwiftJS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,21 +13,37 @@ class ViewController: UIViewController, WKScriptMessageHandler {
     
     @IBOutlet var containerView:UIView! = nil
     var webView: WKWebView?
-    
-    override func loadView() {
-    	println("hehehe")
-    }
+    var count = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        println("viewDidLoad is running")
+        
+        let (theWebView) = buildSwiftly(self)
+
+        self.webView = theWebView?
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage){
+    
+    func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage
+        message: WKScriptMessage){
+        
+        println("\(message.body)")
+        count += 1
+        println("\(count)")
+        
+        if(count == 5){
+            println("count is : \(count)")
+            toScript()
+        }
     }
+
+    
 }
 
