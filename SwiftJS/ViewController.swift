@@ -21,8 +21,9 @@ class ViewController: UIViewController, WKScriptMessageHandler {
         println("viewDidLoad is running")
         
         let (theWebView) = buildSwiftly(self)
-
         self.webView = theWebView?
+        
+
         
     }
 
@@ -36,12 +37,7 @@ class ViewController: UIViewController, WKScriptMessageHandler {
         
         println("\(message.body)")
         count += 1
-        println("\(count)")
-        
-        if(count == 5){
-            println("count is : \(count)")
-            toScript()
-        }
+        toScript(count)
     }
 
     

@@ -1,17 +1,17 @@
 
-function hello(){
+function toSwift(){
+    var message;
     try {
-        var message = {"count":"Hello Jagaa"}
+        message = "JS sent Hello Jagaa!";
         window.webkit.messageHandlers.toSwift.postMessage(message)
     } catch(err) {
-        console.log('The native context does not exist yet');
+        console.log("Native is not found!!!");
     }
 }
 
-//setTimeout(function () {
-//    toSwift();
-//}, 5000);
+function fromSwift(count){
+    
+    document.querySelector('h1').style.color = "blue";
+    console.log("Swift sent count:" + count);
 
-function redHeader(){
-    document.querySelector('h1').style.color = "red";
 }
